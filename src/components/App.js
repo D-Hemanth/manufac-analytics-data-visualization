@@ -1,5 +1,5 @@
-import data from './Wine-Data.json'
-import './styles.css'
+import data from '../Wine-Data.json'
+import '../styles.css'
 import { useState, useEffect } from 'react'
 import Table from './Table'
 

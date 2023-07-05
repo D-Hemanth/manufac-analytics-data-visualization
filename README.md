@@ -4,7 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following commands one by one:
+
+### `yarn install`
+
+Installs all the dependencies required to run the project locally.
 
 ### `yarn start`
 

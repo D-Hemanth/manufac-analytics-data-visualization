@@ -15,6 +15,9 @@ export const median = (arr) => {
 
 // Mode function
 export const mode = (arr) => {
+  // convert the array elements to have only 3 decimal places so that we can calculate mode(the number most frequently seen in the dataset)
+  arr = arr.map((value) => value.toFixed(3))
+
   const frequencyTable = {}
   arr.forEach((elem) => (frequencyTable[elem] = frequencyTable[elem] + 1 || 1))
 
@@ -31,5 +34,8 @@ export const mode = (arr) => {
 
   if (modes.length === Object.keys(frequencyTable).length) modes = []
 
-  return modes.length > 1 ? modes.map((mode) => mode + ', ') : modes
+  if (modes.length === 0) return 'No Mode'
+  return modes.length > 1
+    ? modes.map((mode) => mode.toFixed(3) + ', ')
+    : modes.map((value) => value.toFixed(3))
 }

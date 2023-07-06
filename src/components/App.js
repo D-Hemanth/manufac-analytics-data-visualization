@@ -1,6 +1,6 @@
 import data from '../Wine-Data.json'
 import '../styles.css'
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import Table from './Table'
 
 const App = () => {
